@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root{
+  left: 0;
+  width: 100% !important;
+  /* align-items: center; */
+  
+}
+.App {
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/* header */
+.group-header {
+  position: relative;
+  background-image: url("https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); /* Replace with actual image */
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  color: white;
+}
+
+.group-header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.group-header-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+.btn-join-group {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* postcard  */
+.post-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex ;
+  flex-direction: column;
+}
+
+.post-card img {
+  height: 150px;
+  object-fit: cover;
+}
+
+.post-card-body {
+  padding: 15px;
+}
+
+.post-meta {
+  font-size: 0.85rem;
+  color: #777;
+}
